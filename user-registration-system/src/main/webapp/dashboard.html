@@ -1,0 +1,182 @@
+<!-- <<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .dashboard-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .info-item label {
+      font-weight: bold;
+    }
+
+    .password {
+      display: none; /* Hide password by default */
+    }
+
+    .show-password:checked + .password {
+      display: inline; /* Show password when checkbox is checked */
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+  <h2>User Dashboard</h2>
+  <div class="info-item">
+    <label for="name">Name:</label>
+    <span>John Doe</span>
+  </div>
+  <div class="info-item">
+    <label for="email">Email:</label>
+    <span>john@example.com</span>
+  </div>
+  <div class="info-item">
+    <label for="username">Username:</label>
+    <span>johndoe123</span>
+  </div>
+  <div class="info-item">
+    <label for="password">Password:</label>
+    <input type="checkbox" id="show-password" class="show-password">
+    <span class="password">********</span>
+  </div>
+</div>
+
+</body>
+</html>
+ -->
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(#141e30, #243b55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .dashboard-box {
+      width: 400px;
+      padding: 40px;
+      background: rgba(0,0,0,.5);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .dashboard-box h2 {
+      margin: 0 0 30px;
+      padding: 0;
+    }
+    .info{
+      
+      display: flex;
+     
+      text-align:center;
+      justify-content: space-between;
+    }
+    .data{
+      margin-right: 10px;
+     
+    }
+    
+    .showpass{
+      display: flex;
+      
+    }
+    #password {
+      display: none; /* Hide password by default */
+    }
+
+    .show-password:checked + #password {
+      display: inline; /* Show password when checkbox is checked */
+    }
+   
+    .dashboard-box a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #03e9f4;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px;
+      border-radius: 5px;
+    }
+
+    .dashboard-box a:hover {
+      background: #03e9f4;
+      color: #fff;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard-box">
+  <h2>User Dashboard</h2>
+ 
+ <div class="info">
+   <p>Name :</p>
+  <p class="data" >John Doe</p>
+ </div>
+ 
+  <div class="info">
+   <p>Email :</p>
+  <p class="data">john@example.com</p>
+ </div>
+  <div class="info">
+  <p>Username :</p>
+  <p class="data">johndoe123</p>
+ </div>
+  <div class="info">
+  <label for="password">Password:</label>
+  <p id="password" class="data">********</p>
+ </div>
+ 
+ <div class="showpass">
+    Show Password <input type="checkbox" id="show-password" class="show-password">
+ </div> 
+ 
+  
+  <a>Update</a>
+</div>
+
+</body>
+</html>
+ 
